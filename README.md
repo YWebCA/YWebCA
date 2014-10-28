@@ -1,6 +1,6 @@
 # YWeb Career Academy
 
-We're just getting started. In the meantime take a look at:
+We're just getting started.
 
 * Learn <a href="https://github.com/adorableio/YWebCA/wiki/About-the-Class">about the class</a>.
 * View <a href="https://github.com/adorableio/YWebCA/wiki/Curriculum">the curriculum</a> (a work in progress).
