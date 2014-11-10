@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  display: inline-block;
+  float: left;
+}
+
+body {
+  padding: 1%;
+  font-size: 81.6%;
+  line-height: 1.2em;
+}
+
+.cell {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+#north {}
+#south {}
+
+#quadrant-nw tbody { clear: both; }
+#quadrant-nw tbody tr { clear: both; }
+#quadrant-nw tr { border-top: 1px solid #eeeeee; }
+#quadrant-nw th,
+#quadrant-nw td {
+  border-left: 1px solid #eeeeee;
+}
+
+#quadrant-ne {}
+#quadrant-ne .row {
+  clear: both;
+  border-top: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+}
+#quadrant-ne .cell { border-left: 1px solid #eeeeee; }
+
+#quadrant-sw {}
+#quadrant-sw .col {
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+#quadrant-sw .cell {
+  float: none;
+  border-top: 1px solid #eeeeee;
+}
+
+#quadrant-se {}
+#quadrant-se ul { list-style-type: none; }
+#quadrant-se > ul > li {
+  clear: both;
+  border-top: 1px solid #eeeeee;
+}
+#quadrant-se > ul > li:last-of-type { border-bottom: 1px solid #eeeeee; }
+#quadrant-se .cell { border-left: 1px solid #eeeeee; }
+#quadrant-se .cell:last-of-type { border-right: 1px solid #eeeeee; }
