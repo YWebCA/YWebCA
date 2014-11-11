@@ -4,6 +4,7 @@
   border: 0;
   display: inline-block;
   float: left;
+  background-color: transparent;
 }
 
 body {
@@ -16,6 +17,7 @@ body {
   display: block;
   width: 30px;
   height: 30px;
+  position: relative;
 }
 
 #north {}
