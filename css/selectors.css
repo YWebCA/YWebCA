@@ -20,6 +20,8 @@ body {
   position: relative;
 }
 
+#wrapper {}
+
 #north {}
 #south {}
 
