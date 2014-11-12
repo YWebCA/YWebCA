@@ -4,26 +4,25 @@
     <meta charset="UTF-8">
     <style>
 
-      section { display: inline-block; }
       div {
         display: inline-block;
-        width: 200px;
-        height: 200px;
-        margin: 100px 0 0 100px;
+        width: 100px;
+        height: 100px;
+        margin: 50px 0 25px 50px;
         background-color: blue;
       }
 
-      /* use this transition for all changes on all elements */
       * { transition: all 2s ease 0s; }
 
+      /* hovering on a parent triggers the children */
       .element1 { box-shadow: none; }
       section:hover .element1 { box-shadow: 0 0 20px 20px red; }
-
       .element2 { box-shadow: none; }
       section:hover .element2 { box-shadow: 0 0 20px 20px green; }
 
+      /* hovering on one sibling triggers the next */
       .element3 { box-shadow: none; }
-      section:hover .element3 { box-shadow: 0 0 20px 20px black; }
+      .element3:hover + div { box-shadow: 0 0 20px 20px red; }
 
     </style>
   </head>
@@ -31,7 +30,10 @@
     <section>
       <div class="element1"></div>
       <div class="element2"></div>
+    </section>
+    <section>
       <div class="element3"></div>
+      <div class="element4"></div>
     </section>
   </body>
 </html>
