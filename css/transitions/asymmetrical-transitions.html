@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <style>
+
+      div {
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+        margin: 100px 0 0 100px;
+      }
+
+      /* no transition */
+      .element1 { background-color: blue; }
+      .element1:hover { background-color: red;  }
+
+      /* symmetrical transition */
+      .element2 {
+        background-color: blue;
+        transition: background-color 2s ease 0s;
+      }
+      .element2:hover { background-color: red; }
+
+      /* asymmetrical transition */
+      .element3 {
+        background-color: blue;
+        transition: background-color 5s ease 2s;
+      }
+      .element3:hover {
+        background-color: red;
+        transition: background-color 0.5s ease 0s;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="element1"></div>
+    <div class="element2"></div>
+    <div class="element3"></div>
+  </body>
+</html>
