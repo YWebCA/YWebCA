@@ -1,16 +1,19 @@
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  display: inline-block;
-  float: left;
-  background-color: transparent;
-}
-
 body {
+  margin: 0;
   padding: 1%;
   font-size: 81.6%;
   line-height: 1.2em;
+}
+
+body * {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  position: relative;
+  display: inline-block;
+  float: left;
+  background-color: transparent;
+  transition: all 1s ease 0s;
 }
 
 .cell {
@@ -20,10 +23,10 @@ body {
   position: relative;
 }
 
-#wrapper {}
+#wrapper {}}
 
 #north {}
-#south {}
+#south { clear: both; }
 
 #quadrant-nw tbody { clear: both; }
 #quadrant-nw tbody tr { clear: both; }
