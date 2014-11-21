@@ -1,0 +1,73 @@
+/****************************************************************************/
+/*****************************    CHECKLIST    ******************************/
+/****************************************************************************
+
+id selector
+class selector
+attribute selector
+
+relationship selectors:
+  descendent
+  child / direct descendent
+  sibling
+
+pseudo-selectors
+  :hover
+  :first-child
+  :last-child
+  :nth-child
+  :nth-last-child
+  :nth-of-type
+  :first-of-type
+  :last-of-type
+
+pseudo-elements
+  :before
+  :after
+
+****************************************************************************/
+
+/* odd rows and odd cells, verbose version
+thead .cell:nth-of-type(odd),
+tr:nth-of-type(even) .cell:nth-of-type(odd),
+.row:nth-of-type(odd) .cell:nth-of-type(odd),
+.col:nth-of-type(odd) .cell:nth-of-type(odd),
+li:nth-of-type(odd) li:nth-of-type(odd) {
+  background-color: cyan;
+}
+*/ /* OR: overshoot and later color every other cell black */
+.cell:nth-of-type(odd) { background-color: cyan; }
+
+/* even rows and even cells, verbose version
+tbody tr:nth-of-type(odd) .cell:nth-of-type(even),
+.row:nth-of-type(even) .cell:nth-of-type(even),
+.col:nth-of-type(even) .cell:nth-of-type(even),
+li:nth-of-type(even) li:nth-of-type(even) {
+  background-color: magenta;
+}
+*/ /* OR: overshoot and later color every other cell yellow */
+.cell:nth-of-type(even) { background-color: magenta; }
+
+/* odd rows and even cells */
+thead .cell:nth-of-type(even),
+tr:nth-of-type(even) .cell:nth-of-type(even),
+.row:nth-of-type(odd) .cell:nth-of-type(even),
+.col:nth-of-type(even) .cell:nth-of-type(odd),
+li:nth-of-type(odd) li:nth-of-type(even) {
+  background-color: yellow;
+}
+
+/* even rows and odd cells */
+tbody tr:nth-of-type(odd) .cell:nth-of-type(odd),
+.row:nth-of-type(even) .cell:nth-of-type(odd),
+.col:nth-of-type(odd) .cell:nth-of-type(even),
+li:nth-of-type(even) li:nth-of-type(odd) {
+  background-color: black;
+}
+
+.cell:hover {
+  transition: all 600ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  transform: scale(2);
+  z-index: 9999;
+  background-color: white !important;
+}
