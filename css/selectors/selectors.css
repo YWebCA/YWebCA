@@ -21,6 +21,9 @@ body * {
   width: 30px;
   height: 30px;
   position: relative;
+  box-sizing: border-box;
+  border-top: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 
 #wrapper {}
@@ -30,36 +33,18 @@ body * {
 
 #quadrant-nw tbody { clear: both; }
 #quadrant-nw tbody tr { clear: both; }
-#quadrant-nw tr { border-top: 1px solid #eeeeee; }
-#quadrant-nw th,
-#quadrant-nw td {
-  border-left: 1px solid #eeeeee;
-}
 
 #quadrant-ne {}
-#quadrant-ne .row {
-  clear: both;
-  border-top: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-}
-#quadrant-ne .cell { border-left: 1px solid #eeeeee; }
+#quadrant-ne .row { clear: both; }
+#quadrant-ne .cell:last-child { border-right: 1px solid #eeeeee; }
 
 #quadrant-sw {}
-#quadrant-sw .col {
-  border-left: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-}
-#quadrant-sw .cell {
-  float: none;
-  border-top: 1px solid #eeeeee;
-}
+#quadrant-sw .col {}
+#quadrant-sw .cell { float: none; }
+#quadrant-sw .cell:last-child { border-bottom: 1px solid #eeeeee; }
 
 #quadrant-se {}
 #quadrant-se ul { list-style-type: none; }
-#quadrant-se > ul > li {
-  clear: both;
-  border-top: 1px solid #eeeeee;
-}
-#quadrant-se > ul > li:last-of-type { border-bottom: 1px solid #eeeeee; }
-#quadrant-se .cell { border-left: 1px solid #eeeeee; }
-#quadrant-se .cell:last-of-type { border-right: 1px solid #eeeeee; }
+#quadrant-se > ul > li { clear: both; }
+#quadrant-se > ul:last-child .cell { border-bottom: 1px solid #eeeeee; }
+#quadrant-se .cell:last-child { border-right: 1px solid #eeeeee; }
