@@ -1,0 +1,41 @@
+/****************************************************************************/
+/*****************************    CHECKLIST    ******************************/
+/****************************************************************************
+
+id selector
+class selector
+attribute selector
+
+relationship selectors:
+  descendent
+  child / direct descendent
+  sibling
+
+pseudo-selectors
+  :hover
+  :first-child
+  :last-child
+  :nth-child
+  :nth-last-child
+  :nth-of-type
+  :first-of-type
+  :last-of-type
+
+pseudo-elements
+  :before
+  :after
+
+****************************************************************************/
+
+#quadrant-nw{
+  background-color: blue;
+  
+  border-bottom: 15px dashed red;
+  }
+#quadrant-nw:hover {border-top: 15px solid purple;
+}
+.cell:first-of-type {
+  background-color: green;
+}
+#quadrant-sw div:nth-child(1) {background-color: yellow;
+}

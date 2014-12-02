@@ -1,0 +1,148 @@
+
+/*#whole:active .cell{
+  transform: rotate(-2880deg) scale(1.4, 1.4);
+  z-index: 1;
+  transition: all 4s ease 0s;
+  border-radius: 20px;
+  background: url(spinny.jpg);
+  background-size: cover;
+}*/
+#sketch {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
+#myimg {
+  position: relative;
+  float: inherit;
+  z-index: 1000;
+  border-radius: 250px;
+}
+/*#quad1:hover, #quad2:hover, #quad3:hover, #quad4:hover {
+	transform: rotate(99999deg);
+	-webkit-transition: all 4s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: all 4s cubic-bezier(0.075, 0.82, 0.165, 1); 
+}
+#north:active {
+	transform: rotate(-28800deg);
+	transition: all 40s ease 0s;
+}
+#south:active {
+	transform: rotate(28800deg);
+	transition: all 40s ease 0s;
+}*/
+th.cell:nth-child(odd)  {
+	background-color: #00dd00;
+}
+th.cell:nth-child(even) {
+	background-color: #dd00dd;
+}
+tbody tr:nth-child(even) .cell:nth-child(odd) {
+	background-color: #00dd00;
+}
+tbody tr:nth-child(odd) .cell:nth-child(even) {
+	background-color: #00dd00;
+}
+tbody tr:nth-child(odd) .cell:nth-child(odd) {
+	background-color: #dd00dd;
+}
+tbody tr:nth-child(even) .cell:nth-child(even) {
+	background-color: #dd00dd;
+}
+div .row:nth-child(even) .cell:nth-child(odd) {
+	background-color: #dd00dd;
+}
+div .row:nth-child(odd) .cell:nth-child(even) {
+	background-color: #dd00dd;
+}
+div .row:nth-child(odd) .cell:nth-child(odd) {
+	background-color: #00dd00;
+}
+div .row:nth-child(even) .cell:nth-child(even) {
+	background-color: #00dd00;
+}
+div .col:nth-child(even) .cell:nth-child(odd) {
+	background-color: #dd00dd;
+}
+div .col:nth-child(odd) .cell:nth-child(even) {
+	background-color: #dd00dd;
+}
+div .col:nth-child(odd) .cell:nth-child(odd) {
+	background-color: #00dd00;
+}
+div .col:nth-child(even) .cell:nth-child(even) {
+	background-color: #00dd00;
+}
+ul li:nth-child(even) .cell:nth-child(odd) {
+	background-color: #dd00dd;
+}
+ul li:nth-child(odd) .cell:nth-child(even) {
+	background-color: #dd00dd;
+}
+ul li:nth-child(odd) .cell:nth-child(odd) {
+	background-color: #00dd00;
+}
+ul li:nth-child(even) .cell:nth-child(even) {
+	background-color: #00dd00;
+}
+th.cell:nth-child(odd):hover  {
+	background-color: #dddd00;
+}
+th.cell:nth-child(even):hover {
+	background-color: #0000dd;
+}
+tbody tr:nth-child(even) .cell:nth-child(odd):hover {
+	background-color: #00f;
+}
+tbody tr:nth-child(odd) .cell:nth-child(even):hover {
+	background-color: #00f;
+}
+tbody tr:nth-child(odd) .cell:nth-child(odd):hover {
+	background-color: #f00;
+}
+tbody tr:nth-child(even) .cell:nth-child(even):hover {
+	background-color: #f00;
+}
+div .row:nth-child(even) .cell:nth-child(odd):hover {
+	background-color: #f00;
+}
+div .row:nth-child(odd) .cell:nth-child(even):hover {
+	background-color: #f00;
+}
+div .row:nth-child(odd) .cell:nth-child(odd):hover {
+	background-color: #00f;
+}
+div .row:nth-child(even) .cell:nth-child(even):hover {
+	background-color: #00f;
+}
+div .col:nth-child(even) .cell:nth-child(odd):hover {
+	background-color: #f00;
+}
+div .col:nth-child(odd) .cell:nth-child(even):hover {
+	background-color: #f00;
+}
+div .col:nth-child(odd) .cell:nth-child(odd):hover {
+	background-color: #00f;
+}
+div .col:nth-child(even) .cell:nth-child(even):hover {
+	background-color: #00f;
+}
+ul li:nth-child(even) .cell:nth-child(odd):hover {
+	background-color: #f00;
+}
+ul li:nth-child(odd) .cell:nth-child(even):hover {
+	background-color: #f00;
+}
+ul li:nth-child(odd) .cell:nth-child(odd):hover {
+	background-color: #00f;
+}
+ul li:nth-child(even) .cell:nth-child(even):hover {
+	background-color: #00f;
+}
+tbody tr:nth-child(2):hover .cell:nth-child(4) {
+	background-color: #000;
+}
+tbody tr:nth-child(2):hover .cell:nth-child(8){
+	background-color: #000;
+}
+

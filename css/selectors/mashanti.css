@@ -1,0 +1,87 @@
+/****************************************************************************/
+/*****************************    CHECKLIST    ******************************/
+/****************************************************************************
+
+id selector
+class selector
+attribute selector
+
+relationship selectors:
+  descendent
+  child / direct descendent
+  sibling
+
+pseudo-selectors
+  :hover
+  :first-child
+  :last-child
+  :nth-child
+  :nth-last-child
+  :nth-of-type
+  :first-of-type
+  :last-of-type
+
+pseudo-elements
+  :before
+  :after
+
+****************************************************************************/
+.cell {
+  background-color: blue;
+}
+#quadrant-nw thead .cell:nth-child(odd) {
+  background-color: black;
+}
+#quadrant-nw tbody tr:first-of-type .cell:nth-child(even) {
+  background-color: black;
+}
+#quadrant-nw tr:nth-child(2) .cell:nth-child(odd) {
+  background-color: black
+}
+#quadrant-nw tr:nth-child(3) .cell:nth-child(even) {
+  background-color: black;
+}
+#quadrant-nw tr:nth-child(4) .cell:nth-child(odd) {
+  background-color: black;
+}
+#quadrant-nw tr:nth-child(5) .cell:nth-child(even) {
+  background-color: black;
+}
+#quadrant-nw tr:nth-child(6) .cell:nth-child(odd) {
+  background-color: black;
+}
+#quadrant-nw tr:nth-child(7) .cell:nth-child(even) {
+  background-color: black;
+}
+
+#quadrant-ne .row:nth-child(even) .cell:nth-child(even) {
+  background-color: #000
+}
+#quadrant-ne .row:nth-child(odd) .cell:nth-child(odd) {
+  background-color: #000
+}
+#quadrant-ne .row:nth-child(even) .cell:nth-child(even) {
+  background-color: #000
+}
+#quadrant-ne .row:nth-child(odd) .cell:nth-child(odd) {
+  background-color: #000
+}
+#south .col:nth-child(even) .cell:nth-child(even) {
+  background-color: #000
+}
+#south .col:nth-child(odd) .cell:nth-child(odd) {
+  background-color: #000
+}
+
+#quadrant-se ul li:nth-child(even) .cell:nth-child(even) {
+  background-color: #000
+}
+#quadrant-se ul li:nth-child(odd) .cell:nth-child(odd) {
+  background-color: #000
+}
+
+
+
+
+
+

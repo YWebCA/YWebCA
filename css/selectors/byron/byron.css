@@ -1,0 +1,116 @@
+/****************************************************************************/
+/*****************************    CHECKLIST    ******************************/
+/****************************************************************************
+
+id selector
+class selector
+attribute selector
+
+relationship selectors:
+  descendent
+  child / direct descendent
+  sibling
+
+pseudo-selectors
+  :hover
+  :first-child
+  :last-child
+  :nth-child
+  :nth-last-child
+  :nth-of-type
+  :first-of-type
+  :last-of-type
+
+pseudo-elements
+  :before
+  :after
+
+****************************************************************************/
+#quadrant-nw {
+  background-color: #00aa00;
+  box-shadow: 10px 10px 5px #eeee00;
+}
+#quadrant-ne {
+  background-color: #eeee00;
+}
+#quadrant-sw {
+  background-image: url(gb2.jpg);
+  background-size: cover;
+  background-color: #00aa00;
+  transition: background-color;
+}
+thead {
+  background-color: #eeee00;
+}
+div.row:first-child, div.row:hover{
+  background-color: #00aa00;
+  outline-color: dotted yellow;
+}
+div.row:last-child {
+  background-color: #00aa00;
+}
+tr td:first-child {
+  background-color: #eeee00;
+}
+tbody tr:last-child {
+  background-color: #eeee00;
+}
+tr:last-child, td:last-child{
+  background-color: #eeee00;
+}
+div.row:last-child {
+  background-color: #00aa00;
+}
+tbody tr:last-child {
+  background-color: #eeee00;
+}
+tr td:first-child {
+  background-color: #eeee00;
+}
+
+tbody tr:nth-child(3) .cell:nth-child(4) {
+  background-color: #eeee00;
+}
+tbody tr:nth-child(4) .cell:nth-child(4) {
+  background-color: #eeee00;
+}
+tbody tr:nth-child(3) .cell:nth-child(5) {
+  background-color: #eeee00;
+}
+tbody tr:nth-child(3) .cell:nth-child(6) {
+  background-color: #eeee00;
+}
+tbody tr:nth-child(3) .cell:nth-child(7) {
+  background-color: #eeee00;
+}
+tbody tr:first-child .cell:last-of-type {
+  background-color: #00ee00;
+}
+tbody tr:first-child .cell:last-of-type{
+  background-color: #00aa00;
+}
+tbody tr:nth-child(2) .cell:last-of-type {
+ background-color: #00aa00;
+}
+#quadrant-ne .row .cell:first-child {
+  background-color: #00aa00;
+}
+#quadrant-ne .row .cell:last-child {
+  background-color: #00aa00;
+}
+ 
+#quadrant-se {
+background-image: url(gb.jpg);
+background-size: cover;
+}
+#quadrant-sw .cell {
+  background-color: #00aa00;
+
+}
+#quadrant-sw:hover .cell {
+
+background-color: transparent;  
+}
+
+
+

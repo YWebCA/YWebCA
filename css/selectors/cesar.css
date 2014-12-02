@@ -1,0 +1,86 @@
+/****************************************************************************/
+/*****************************    CHECKLIST    ******************************/
+/****************************************************************************
+
+id selector
+class selector
+attribute selector
+
+relationship selectors:
+  descendent
+  child / direct descendent
+  sibling
+
+pseudo-selectors
+  :hover
+  :first-child
+  :last-child
+  :nth-child
+  :nth-last-child
+  :nth-of-type
+  :first-of-type
+  :last-of-type
+
+pseudo-elements
+  :before
+  :after
+
+****************************************************************************/
+tr .cell:first-child {
+  background-color: #000;
+}
+tr .cell:last-child {
+  background-color: #5f5f5f;
+}
+tr .cell:last-child  {
+  background-color: #050505; 
+}
+div .row:nth-child(odd) .cell:nth-child(odd) {
+   background-color: #0d0;
+ }
+ div .row:nth-child(even) .cell:nth-child(even) {
+   background-color: #0d0;
+ }
+tbody tr:nth-child(odd) .cell:nth-child(odd) {
+   background-color: #0d0;
+ }
+ tbody tr:nth-child(even) .cell:nth-child(even) {
+   background-color: #0d0;
+ }
+thead tr:nth-child(odd) .cell:nth-child(odd) {
+   background-color: #0d0;
+ }
+ thead tr:nth-child(odd) .cell:nth-child(even) {
+  background-color: #d0d;
+}
+tbody tr:nth-child(even) .cell:nth-child(odd) {
+  background-color: #d0d;
+}
+tbody tr:nth-child(odd) .cell:nth-child(even) {
+  background-color: #d0d;
+}
+div .row:nth-child(even) .cell:nth-child(odd) {
+  background-color: #d0d;
+}
+div .row:nth-child(odd) .cell:nth-child(even) {
+  background-color: #d0d;
+}
+div .col:nth-child(odd) .cell:nth-child(odd) {
+  background-color: #d0d;
+}
+div .col:nth-child(even) .cell:nth-child(even) {
+  background-color: #d0d;
+}
+div .col:nth-child(odd) .cell:nth-child(even) {
+  background-color: #0d0;
+}
+div .col:nth-child(even) .cell:nth-child(odd) {
+  background-color: #0d0;
+}
+
+
+
+
+
+
+

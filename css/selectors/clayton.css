@@ -1,0 +1,68 @@
+/****************************************************************************/
+/*****************************    CHECKLIST    ******************************/
+/****************************************************************************
+
+id selector
+class selector
+attribute selector
+
+relationship selectors:
+  descendent
+  child / direct descendent
+  sibling
+
+pseudo-selectors
+  :hover
+  :first-child
+  :last-child
+  :nth-child
+  :nth-last-child
+  :nth-of-type
+  :first-of-type
+  :last-of-type
+
+pseudo-elements
+  :before
+  :after
+
+***********************************/
+li.cell:nth-child(even) {
+background-color:blue;
+
+}
+td.cell:nth-child(odd) {
+background-color:red;
+}
+div.cell:nth-child(odd) {  
+background-color:red;
+}
+div.cell:nth-child(even) {          
+background-color:blue;
+}
+td.cell:nth-child(even) {
+  background-color:blue;
+}
+li.cell:nth-child(odd)  {
+background-color:red;
+}
+thead .cell{
+  background-color:green;
+}
+#wrapper:hover {
+  transform: rotate(360deg);
+  transition: all 1s ease 0s;
+}
+#wrapper:active {
+  transform: rotate(360000deg);
+  transition: all 1s ease 0s;
+}
+
+
+
+
+
+
+
+
+
+

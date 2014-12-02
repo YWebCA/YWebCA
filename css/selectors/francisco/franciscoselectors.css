@@ -1,0 +1,128 @@
+
+
+body {
+  margin: 0;
+  padding: 1%;
+  font-size: 81.6%;
+  line-height: 1.2em;
+}
+@-webkit-keyframes infinite-spinning {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes infinite-spinningg {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+@-webkit-keyframes bulge {
+        0%, 100% {
+          width: 30px;
+          height: 30px;
+        }
+        50% {
+          transform: skew(-100px);
+          width: 20px;
+          height: 20px;
+        }
+}
+#quad1, #quad4{
+   -webkit-animation: infinite-spinning .3s infinite;
+}
+#quad2, #quad3{
+  -webkit-animation: infinite-spinningg .3s infinite;
+}
+#north {
+   -webkit-animation: infinite-spinningg 2s infinite;
+}
+#south {
+  -webkit-animation: infinite-spinningg 2s infinite;
+}
+#huh {
+  width: 600px;
+     -webkit-animation: infinite-spinning 1s ease infinite;
+}
+.cell {
+  -webkit-animation: bulge 2s ease infinite;
+}
+#huh:active {
+  transform: rotate(3600000deg);
+}
+.cell:hover{
+  transform: scale(2, -2) rotate(-200deg);
+  z-index: 1;
+  box-shadow: 10px 10px 10px #000;
+  transition: all .1s ease 0s;
+  border-radius: 20px;
+}
+
+
+body * {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  position: relative;
+  display: inline-block;
+  float: left;
+  background-color: transparent;
+  transition: all 2s ease 0s;
+}
+.cell {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+
+#north {
+}
+#south {
+  clear: both;
+}
+
+#quad1 tbody { clear: both; }
+#quad1 tbody tr { clear: both; }
+#quad1 tr { border-top: 1px solid #eeeeee; }
+#quad1 th,
+#quad1 td {
+  border-left: 1px solid #eeeeee;
+}
+
+#quad2 {}
+#quad2 .row {
+  clear: both;
+  border-top: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+}
+#quad2 .cell { border-left: 1px solid #eeeeee; }
+
+#quad3 {}
+#quad3 .col {
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+#quad3 .cell {
+  float: none;
+  border-top: 1px solid #eeeeee;
+}
+
+#quad4 {}
+#quad4 ul { list-style-type: none; }
+#quad4 > ul > li {
+  clear: both;
+  border-top: 1px solid #eeeeee;
+}
+#quad4 > ul > li:last-of-type { border-bottom: 1px solid #eeeeee; }
+#quad4 .cell { border-left: 1px solid #eeeeee; }
+#quad4 .cell:last-of-type { border-right: 1px solid #eeeeee; }
+
+
+
+
