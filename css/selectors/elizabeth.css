@@ -1,0 +1,92 @@
+/****************************************************************************/
+/*****************************    CHECKLIST    ******************************/
+/****************************************************************************
+
+id selector
+class selector
+attribute selector
+
+relationship selectors:
+  descendent
+  child / direct descendent
+  sibling
+
+pseudo-selectors
+  :hover
+  :first-child
+  :last-child
+  :nth-child
+  :nth-last-child
+  :nth-of-type
+  :first-of-type
+  :last-of-type
+
+pseudo-elements
+  :before
+  :after
+
+****************************************************************************/
+#quadrant-nw {
+  background-color: fuchsia;
+}
+#quadrant-ne {
+  background-color: #ee00aa;
+}
+#quadrant-sw {
+   background-color: mediumvioletred;
+}
+#quadrant-se {
+   background-color: darkmagenta;
+}
+div.row:nth-child(7) {
+background-color: dimgray;
+
+}
+div.col:first-child {
+  background-color: 
+  #000000;
+  }
+ #quadrant-se li:nth-child(6) {
+    background-color: 
+    darkslategray;
+  }
+#quadrant-se li li:nth-child(6) {
+    background-color: 
+    darkmagenta;
+  }
+ #quadrant-se ul li:nth-child(6) .cell:nth-child(6) {
+  background-color: 
+    darkslategray;
+}
+tbody tr:nth-child(even) .cell:nth-child(odd) {
+  background-color: slategray;
+}
+thead tr:first-child {
+  background-color: indigo
+}
+
+tbody tr:nth-child(odd) .cell:nth-child(even) {
+  background-color: darkolivegreen;
+}
+tbody tr:nth-child(odd) .cell:nth-child(even):hover {
+  background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+

@@ -1,0 +1,95 @@
+/****************************************************************************/
+/*****************************    CHECKLIST    ******************************/
+/****************************************************************************
+
+id selector
+class selector
+attribute selector
+
+relationship selectors:
+  descendent
+  child / direct descendent
+  sibling
+
+pseudo-selectors
+  :hover
+  :first-child
+  :last-child
+  :nth-child
+  :nth-last-child
+  :nth-of-type
+  :first-of-type
+  :last-of-type
+
+pseudo-elements
+  :before
+  :after
+
+****************************************************************************/
+#north .cell  {
+background-color:orange;
+}
+#quadrant-nw thead .cell:nth-child(odd) {
+  background-color: yellow; 
+}
+#quadrant-nw tbody tr:first-of-type .cell:nth-child(even) {
+background-color: red; 
+}
+#quadrant-nw tr:nth-child(2) .cell:nth-child(odd) {
+background-color: green; 
+} 
+#quadrant-nw tr:nth-child(3) .cell:nth-child(even){ 
+background-color: yellow 
+} 
+#quadrant-nw tr:nth-child(4) .cell:nth-child(odd) {
+background-color: red 
+} 
+#quadrant-nw tr:nth-child(5) .cell:nth-child(even) {
+background-color: green
+}
+#quadrant-nw tr:nth-child(6) .cell:nth-child(odd) {
+background-color: yellow 
+}
+#quadrant-nw tr:nth-child(7) .cell:nth-child(even) {
+background-color: red 
+}
+#quadrant-nw:hover tr:nth-child(7) .cell {
+background-color: green 
+}
+#quadrant-ne .row:first-child .cell:nth-child(odd){
+  background-color: yellow
+}
+#quadrant-ne .row:nth-child(2) .cell:nth-child(even){
+  background-color:red
+}
+#quadrant-ne .row:nth-child(3) .cell:nth-child(odd){
+  background-color:green 
+}
+#quadrant-ne .row:nth-child(4) .cell:nth-child(even){
+  background-color:yellow
+}
+#quadrant-ne .row:nth-child(5) .cell:nth-child(odd){
+  background-color:red
+}
+#quadrant-ne .row:nth-child(6) .cell:nth-child(even){
+  background-color:green
+}
+#quadrant-ne .row:nth-child(7) .cell:nth-child(odd){
+  background-color:yellow 
+}
+  #quadrant-ne .row:nth-child(8) .cell:nth-child(even){
+  background-color:red
+}
+#quadrant-ne:hover .row:nth-child(8) .cell{
+
+  background-color:yellow
+}
+  #south {background-image: url(mandela-3.png); 
+    background-size: cover; 
+  }
+ 
+}
+
+  .cell:hover 
+  {background-color: black;(outline-color:red ) 
+  }
