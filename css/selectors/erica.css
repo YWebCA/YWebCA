@@ -1,0 +1,247 @@
+/****************************************************************************/
+/*****************************    CHECKLIST    ******************************/
+/****************************************************************************
+
+id selector
+class selector
+attribute selector
+
+relationship selectors:
+  descendent
+  child / direct descendent
+  sibling
+
+pseudo-selectors
+  :hover
+  :first-child
+  :last-child
+  :nth-child
+  :nth-last-child
+  :nth-of-type
+  :first-of-type
+  :last-of-type
+
+pseudo-elements
+  :before
+  :after
+
+****************************************************************************/
+
+/* NW */
+
+#quadrant-nw th {
+  background: pink;
+}
+
+#quadrant-nw tr:nth-child(even) {
+  background: pink;
+}
+
+#quadrant-nw td:nth-child(odd) {
+  background: pink;
+}
+
+#quadrant-nw > table > tbody > tr:nth-child(5) > td:nth-child(8) {
+  background: purple;
+}
+
+#quadrant-nw > table > tbody > tr:nth-child(3) > td:nth-child(8) {
+  background: purple;
+}
+
+#quadrant-nw > table > tbody > tr:nth-child(1) > td:nth-child(8) {
+  background: purple;
+}
+
+#quadrant-nw > table > tbody > tr:nth-child(7) > td:nth-child(6) {
+  background: purple;
+}
+
+#quadrant-nw > table > tbody > tr:nth-child(7) > td:nth-child(4) {
+  background: purple;
+}
+
+#quadrant-nw > table > tbody > tr:nth-child(7) > td:nth-child(2) {
+  background: purple;
+}
+
+#quadrant-nw > table > tbody > tr:nth-child(7) > td:nth-child(8) {
+  background: purple;
+}
+
+#quadrant-nw > table > tbody > tr:nth-child(3) > td:nth-child(4) {
+  background: yellow;
+}
+
+#quadrant-nw > table > tbody > tr:nth-child(1) > td:nth-child(2) {
+  background: mediumorchid;
+}
+
+#quadrant-nw > table > tbody > tr:nth-child(5) > td:nth-child(6) {
+  background: mediumorchid;
+}
+
+#quadrant-nw > table > tbody > tr:nth-child(1) > td:nth-child(6) {
+  background: mediumorchid;
+}
+
+#quadrant-nw > table > tbody > tr:nth-child(5) > td:nth-child(2) {
+  background: mediumorchid;
+}
+
+#quadrant-nw > table > tbody > tr:nth-child(1) > td:nth-child(4):hover {
+  background: cornflowerblue;
+}
+
+#quadrant-nw > table > tbody > tr:nth-child(1) > td:nth-child(4):hover {
+  background: cornflowerblue;
+}
+tbody tr:nth-child(1) .cell:nth-child(4):hover, tbody tr:nth-child(3) .cell:nth-child(2):hover,
+tbody tr:nth-child(3) .cell:nth-child(6):hover, tbody tr:nth-child(5) .cell:nth-child(4):hover {
+  background: cornflowerblue;
+}
+
+
+/* NE */
+
+#quadrant-ne .row:nth-child(odd) {
+  background: purple;
+}
+
+#quadrant-ne .cell:nth-child(even) {
+  background: purple;
+}
+
+#quadrant-ne .cell:last-child {
+  background: purple;
+}
+
+#quadrant-ne > div:nth-child(6) > div:nth-child(1) {
+  background: pink;
+}
+
+#quadrant-ne > div:nth-child(4) > div:nth-child(1) {
+  background: pink;
+}
+
+#quadrant-ne > div:nth-child(2) > div:nth-child(1) {
+  background: pink;
+}
+
+#quadrant-ne > div:nth-child(8) > div:nth-child(odd) {
+  background: pink;
+}
+
+#quadrant-ne > div:nth-child(4) > div:nth-child(5) {
+  background: yellow;
+}
+
+#quadrant-ne > div:nth-child(8) > div:nth-child(1) {
+  background: crimson;
+}
+
+#quadrant-ne > div:nth-child(2) > div:nth-child(7) {
+  background: hotpink;
+}
+
+#quadrant-ne > div:nth-child(6) > div:nth-child(3) {
+  background: hotpink;
+}
+
+#quadrant-ne > div:nth-child(2) > div:nth-child(3) {
+  background: hotpink;
+}
+
+#quadrant-ne > div:nth-child(6) > div:nth-child(7) {
+  background: hotpink;
+}
+
+/* SW */
+
+#quadrant-sw .col:nth-child(odd) {
+  background: purple;
+}
+
+#quadrant-sw .cell:nth-child(even) {
+  background: purple;
+}
+
+#quadrant-sw > div:nth-child(even) > div:nth-child(1) {
+  background: pink;
+}
+
+#quadrant-sw > div:nth-child(8) > div:nth-child(odd) {
+  background: pink;
+}
+
+#quadrant-sw > div:nth-child(4) > div:nth-child(5) {
+  background: yellow;
+}
+
+#quadrant-se > ul > li:nth-child(2) > ul > li:nth-child(1) {
+  background: crimson;
+}
+
+#quadrant-sw > div:nth-child(8) > div:nth-child(1) {
+  background: crimson;
+}
+
+#quadrant-sw > div:nth-child(6) > div:nth-child(3) {
+  background: hotpink;
+}
+
+#quadrant-sw > div:nth-child(2) > div:nth-child(7) {
+  background: hotpink;
+}
+
+#quadrant-sw > div:nth-child(2) > div:nth-child(3) {
+  background: hotpink;
+}
+
+#quadrant-sw > div:nth-child(6) > div:nth-child(7) {
+  background: hotpink;
+}
+
+
+
+/* SE */
+
+#quadrant-se ul li:nth-child(even) {
+  background: pink;
+}
+ 
+#quadrant-se > ul > li:nth-child(1) > ul > li:nth-child(odd) {
+  background: purple;
+}
+
+#quadrant-se > ul > li:nth-child(odd) > ul > li:nth-child(1) {
+  background: purple;
+}
+
+#quadrant-se > ul > li:nth-child(1) > ul > li:nth-child(1) {
+  background: yellow;
+}
+
+#quadrant-se > ul > li:nth-child(5) > ul > li:nth-child(5) {
+  background: yellow;
+}
+
+#quadrant-se > ul > li:nth-child(1) > ul > li:nth-child(2) {
+  background: crimson;
+}
+
+#quadrant-se > ul > li:nth-child(3) > ul > li:nth-child(3) {
+  background: mediumorchid;
+}
+
+#quadrant-se > ul > li:nth-child(7) > ul > li:nth-child(7) {
+  background: mediumorchid;
+}
+
+#quadrant-se > ul > li:nth-child(3) > ul > li:nth-child(7) {
+  background: mediumorchid;
+}
+
+#quadrant-se > ul > li:nth-child(7) > ul > li:nth-child(3) {
+  background: mediumorchid;
+}

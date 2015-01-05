@@ -46,5 +46,5 @@ body * {
 #quadrant-se {}
 #quadrant-se ul { list-style-type: none; }
 #quadrant-se > ul > li { clear: both; }
-#quadrant-se > ul:last-child .cell { border-bottom: 1px solid #eeeeee; }
+#quadrant-se li li:last-child .cell { border-bottom: 1px solid #eeeeee; }
 #quadrant-se .cell:last-child { border-right: 1px solid #eeeeee; }

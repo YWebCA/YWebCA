@@ -1,0 +1,50 @@
+/****************************************************************************/
+/*****************************    CHECKLIST    ******************************/
+/****************************************************************************
+
+id selector
+class selector
+attribute selector
+
+relationship selectors:
+  descendent
+  child / direct descendent
+  sibling
+
+pseudo-selectors
+  :hover
+  :first-child
+  :last-child
+  :nth-child
+  :nth-last-child
+  :nth-of-type
+  :first-of-type
+  :last-of-type
+
+pseudo-elements
+  :before
+  :after
+
+****************************************************************************/
+#quadrant-nw {
+  background-image: url('stars.png');
+  background-size: 248px 248px;
+}
+#quadrant-sw {
+  background-color: red;
+}
+#quadrant-ne {
+  background-color: red;
+}
+#quadrant-se {
+  background-color: red;
+}
+#quadrant-ne .row:nth-child(2n+2) {
+  background-color:white;
+}
+#quadrant-se ul.li:nth-of-type(2) {
+  background-color: white;
+}
+#quadrant-sw .col:nth-child(2n+2) {
+  background-color: white;
+}

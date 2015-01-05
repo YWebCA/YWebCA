@@ -1,0 +1,134 @@
+/****************************************************************************/
+/*****************************    CHECKLIST    ******************************/
+/****************************************************************************
+id selector
+class selector
+attribute selector
+relationship selectors:
+  descendent
+  child / direct descendent
+  sibling
+pseudo-selectors
+  :hover
+  :first-child
+  :last-child
+  :nth-child
+  :nth-last-child
+  :nth-of-type
+  :first-of-type
+  :last-of-type
+pseudo-elements
+  :before
+  :after
+****************************************************************************/
+body {
+  #background-color: #4D4D55;
+
+}
+
+#wrapper{
+  background-image: url('gb.jpg');
+  background-size: 480px 480px;
+  background-repeat: no-repeat;
+  border: 1 solid #FFF;
+}
+
+#quadrant-nw:nth-child(-n+1){
+
+}
+
+#quadrant-nw {
+  background-color: #296ACC;
+  width: 240px;
+  height: 240px;
+  /**background-image: url('pay.jpg');**/
+
+  /**Animate NW quad to move to right
+  -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+  animation: myAnimate 5s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myAnimate {
+    from {left: 0px;}
+    to {left: 500px;}
+}
+
+@keyframes myAnimate {
+    from {left: 0px;}
+    to {left: 500px;}
+}
+/**End of keyframes for NW-Quad***/
+
+#quadrant-nw:hover {
+
+  background-color: #296ACC;
+
+  -ms-transform: rotate(30deg); /* IE 9 */
+  -webkit-transform: rotate(30deg); /* Chrome, Safari, Opera */
+  transform: rotate(30deg);
+}
+
+#quadrant-ne {
+  background-color: #296ACC;
+  width: 240px;
+  height: 240px;
+  /**background-image: url('pay.jpg');**/
+}
+
+#quadrant-ne:hover {
+
+  background-color: #296ACC;
+
+  -ms-transform: translate(600px,0px); /* IE 9 */
+  -webkit-transform: translate(600px,0px); /* Chrome, Safari, Opera */
+  transform: translate(600px,0px);
+}
+
+#quadrant-sw {
+  background-color: #296ACC;
+  width: 240px;
+  height: 240px;
+  /**background-image: url('pay.jpg');**/
+}
+
+#quadrant-sw:hover {
+
+  background-color: #296ACC;
+
+  -ms-transform: translate(0px,300px); /* IE 9 */
+  -webkit-transform: translate(opx,300px); /* Chrome, Safari, Opera */
+  transform: translate(0px,100px);
+}
+
+#quadrant-se {
+  background-color: #296ACC;
+  width: 240px;
+  height: 240px;
+  /**background-image: url('pay.jpg');**/
+}
+
+#quadrant-se:hover {
+
+  background-color: #296ACC;
+
+  -ms-transform: rotate(300deg); /* IE 9 */
+  -webkit-transform: rotate(300deg); /* Chrome, Safari, Opera */
+  transform: rotate(300deg);
+}
+
+#quadrant-ne {}
+
+#quadrant-nw:hover {
+
+  background-color: #296ACC;
+
+  -ms-transform: rotate(30deg); /* IE 9 */
+  -webkit-transform: rotate(30deg); /* Chrome, Safari, Opera */
+  transform: rotate(30deg);
+}
+
+#quadrant-ne { 
+  /*background-color: #296ACC; */
+
+}

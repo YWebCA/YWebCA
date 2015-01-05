@@ -1,0 +1,68 @@
+/****************************************************************************/
+/*****************************    CHECKLIST    ******************************/
+/****************************************************************************
+
+id selector
+class selector
+attribute selector
+
+relationship selectors:
+  descendent
+  child / direct descendent
+  sibling
+
+pseudo-selectors
+  :hover
+  :first-child
+  :last-child
+  :nth-child
+  :nth-last-child
+  :nth-of-type
+  :first-of-type
+  :last-of-type
+
+pseudo-elements
+  :before
+  :after
+
+****************************************************************************/
+#quadrant-nw th.cell:nth-child(odd)
+  {background-color:#e2d2f7;}
+#quadrant-nw tr:last-child
+  {background-color:#0db3ff;}
+#quadrant-nw th.cell:nth-child(even){background-color: #f2608a}
+#quadrant-nw tr:last-of-type{background-color: #ab9e14}
+#quadrant-nw tr:nth-child(3n){background-color: #2b07c4}
+#quadrant-nw > table > tbody > tr:nth-child(1) > td:nth-child(3):hover{background-color: red;}
+#quadrant-nw > table > tbody > tr:nth-child(4) > td:nth-child(6):hover{background-color: #a8b1fc;}
+#quadrant-nw > table > tbody > tr:nth-child(4) > td:nth-child(3):hover{background-color: green;}
+
+
+#quadrant-ne div.row:nth-last-child(even)
+  {background-color: aliceblue;}
+#quadrant-ne div:first-of-type{background-color:yellow;}
+#quadrant-ne div.row:nth-last-child(odd)
+  {background-color: chartreuse}
+#quadrant-ne div:hover{background-color: black}
+
+
+#quadrant-sw div.col:nth-of-type(2n+4){background-color: #f91ac6}
+#quadrant-sw div:hover{background-color: #000000}
+#quadrant-sw > div:nth-child(2) > div:nth-child(3){background-color: #990299;}
+#quadrant-sw > div:nth-child(2) > div:nth-child(6){background-color: deepskyblue;}
+
+
+#quadrant-se ul li:first-child{background-color: #1242ff}
+#quadrant-se ul li:nth-child(2n+2){background-color: #dd11bb}
+#quadrant-se ul li:nth-child(3n+5){background-color: #0ac37f}
+#quadrant-se > ul > li:hover{background-color:chocolate;
+
+
+
+
+
+
+
+
+
+
