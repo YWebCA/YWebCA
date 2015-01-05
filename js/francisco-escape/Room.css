@@ -1,0 +1,97 @@
+body {
+	background-color: #004;
+}
+.button {
+	width: 300px;
+	background-color: #00f;
+}
+.here {
+	background-color: #f00;
+}
+#block {
+	height: 200px;
+	width: 200px;
+	background-color: #0f0;
+	position: absolute;
+	display: block;
+}
+p {
+	text-align: center;
+	line-height: 195px;
+	display: inherit;
+}
+.talkin  p {
+	background-image: url("night.png");
+	font-size: 30px;
+	color: #fff;
+	background-size: cover;
+
+}
+#block:hover {
+	background-color: #f0f;
+}
+#blocktoo {
+	height: 200px;
+	width: 200px;
+	background-color: #0f0;
+	position: absolute;
+	display: none;
+}
+#blocktoo:hover {
+	background-color: #f0f;
+}
+#blockthree {
+	height: 200px;
+	width: 200px;
+	background-color: #0f0;
+	position: absolute;
+	display: none;
+}
+#blockthree:hover {
+	background-color: #f0f;
+}
+#blockfor {
+	height: 200px;
+	width: 200px;
+	background-color: #0f0;
+	position: absolute;
+	display: none;
+}
+#blockfor:hover {
+	background-color: #f0f;
+}
+#blockfive {
+	height: 200px;
+	width: 200px;
+	background-color: #0f0;
+	position: absolute;
+	display: none;
+}
+#blockfive:hover {
+	background-color: #f0f;
+}
+a {
+	display: inherit;
+}
+#blocksix {
+	height: 200px;
+	width: 200px;
+	background-color: #0f0;
+	position: absolute;
+	display: none;
+}
+#blocksix:hover {
+	background-color: #f0f;
+}
+
+#blocksev {
+	height: 200px;
+	width: 200px;
+	background-color: #0f0;
+	position: absolute;
+	display: none;
+}
+#blocksev:hover {
+	background-color: #f0f;
+}
+
