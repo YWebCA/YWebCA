@@ -1,0 +1,13 @@
+{
+  "name": "pair-picker",
+  "version": "0.0.1",
+  "description": "Picks pair programming pairs",
+  "main": "pair.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Annalise Haynes",
+  "license": "ISC"
+}
