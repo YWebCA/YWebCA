@@ -1,0 +1,20 @@
+.sc-planet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sc-cube {}
+
+.sc-gutter {
+  width: 0;
+  height: 0;
+  flex-grow: 1;
+  background-color: transparent;
+  transition: none;
+  animation: none;
+}
+.sc-gutter:hover {
+  transition: none;
+  animation: none;
+}

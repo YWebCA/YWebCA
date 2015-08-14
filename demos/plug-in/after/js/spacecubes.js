@@ -3,17 +3,19 @@ spaceCube.init = function ( options ) {
   var planets = $(options.planets);
   var cubes = $(options.cubes);
   // setup
-  var nodes = planets.first().children();
-  nodes.addClass('node');
-  nodes.before('<div class="gutter"></div>');
-  nodes.last().after('<div class="gutter"></div>');
-  planets.not(':first-child').append('<div class="gutter"></div>');
+  var gutter_str = '<div class="sc-gutter"></div>';
+  planets.addClass('sc-planet');
+  cubes.addClass('sc-cube');
+  cubes.before(gutter_str);
+  planets.append(gutter_str);
   
   // animtion cascade
-  planets.on( 'click', '.node', function () {
+  planets.on( 'click', '.sc-cube', function () {
     var cube = $(this);
     var gutter = cube.next();
-    var parent = cube.closest(options.planets);
+    var planet = cube.parents('.sc-planet');
+    var old_w = cube.width();
+    var old_h = cube.height();
     cube.animate( {
       width: 0,
       height: 0
@@ -23,15 +25,17 @@ spaceCube.init = function ( options ) {
       }, 400, 'easeOutQuad', function () {
         cube.remove();
         gutter.remove();
-        if ( parent.next().length == 0 )
-          parent.siblings().first().append(cube, gutter);
-        else parent.next().append(cube, gutter);
+        planets.each( function ( i, e ) {
+          if ( planet[0] === e ) {
+            planets.eq( (i+1) % planets.length ).append( cube, gutter );
+          }
+        } );
         gutter.animate( {
           'flex-grow': 1
         }, 400, 'easeInQuad', function () {
           cube.animate( {
-            width: '10vw',
-            height: '10vw'
+            width: old_w,
+            height: old_h
           }, 400, 'easeOutQuad', function () {} )
         } );
       } );

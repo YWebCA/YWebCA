@@ -5,9 +5,6 @@ html * {
 
 section {
   height: 50vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 5vw;
 }
 
@@ -54,16 +51,3 @@ div:hover {
 #five { background-color: #9b59b6; }
   #five svg circle { fill: #8e44ad; }
   #five svg path { stroke: #8e44ad; }
-
-/* for JQuery */
-.gutter {
-  width: 0;
-  flex-grow: 1;
-  background-color: transparent;
-  transition: none;
-  animation: none;
-}
-.gutter:hover {
-  transition: none;
-  animation: none;
-}
